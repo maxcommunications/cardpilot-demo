@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | CardPilot AI</title>
+<style>
+  :root { --accent:#ec3013; --ink:#201e1d; --bg:#f3f2f2; --muted:#605d5d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+         font-size:15px; line-height:1.9; }
+  main { max-width:720px; margin:0 auto; padding:48px 24px 80px; }
+  .kicker { color:var(--accent); font-weight:800; font-size:11px; letter-spacing:.14em; }
+  h1 { font-size:28px; line-height:1.3; margin:8px 0 4px; border-bottom:2px solid rgba(32,30,29,.4); padding-bottom:14px; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:32px; }
+  h2 { font-size:17px; margin:36px 0 8px; border-bottom:2px solid rgba(32,30,29,.4); padding-bottom:6px; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; }
+  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid rgba(32,30,29,.25); vertical-align:top; }
+  th { background:#eae9e9; font-size:12px; white-space:nowrap; }
+  .placeholder { background:#fff2ef; color:#7c1405; padding:0 4px; font-weight:700; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">CARDPILOT AI</div>
+  <h1>プライバシーポリシー</h1>
+  <div class="date">制定日: 2026年9月13日</div>
+
+  <p>株式会社マックスコミュニケーションズ（以下「当社」といいます）は、モバイルアプリケーション「CardPilot AI」（以下「本アプリ」といいます）における利用者の情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+
+  <h2>1. 取得する情報</h2>
+  <table>
+    <tr><th>情報の種類</th><th>内容</th></tr>
+    <tr><td>アカウント情報</td><td>メールアドレス、氏名（表示名）、所属組織名、パスワード（暗号化して保存）</td></tr>
+    <tr><td>名刺情報</td><td>利用者が撮影・アップロードした名刺画像、およびそこから読み取られた氏名・会社名・部署・役職・電話番号・メールアドレス・住所等</td></tr>
+    <tr><td>営業活動情報</td><td>利用者が入力した顧客情報、商談メモ、接触履歴、タスク、メール下書き</td></tr>
+    <tr><td>利用状況</td><td>操作ログ（監査目的の操作記録）、エラー情報</td></tr>
+  </table>
+  <p>本アプリは、広告識別子（IDFA）の取得、および広告・行動トラッキングを目的とした情報収集を行いません。</p>
+
+  <h2>2. 利用目的</h2>
+  <ul>
+    <li>本アプリの機能提供（名刺の読み取り、顧客管理、営業支援機能）のため</li>
+    <li>AIによる名刺情報の抽出、営業スコアの算出、企業分析、メール文面の生成のため</li>
+    <li>本人確認、アカウント管理、不正利用の防止のため</li>
+    <li>お問い合わせへの対応、重要なお知らせの通知のため</li>
+    <li>サービスの品質改善、障害対応のため</li>
+  </ul>
+
+  <h2>3. 第三者への提供・外部サービスの利用</h2>
+  <p>当社は、法令に基づく場合を除き、利用者の同意なく個人情報を第三者に提供しません。本アプリは機能の提供のため、以下の外部サービスを利用しています。</p>
+  <table>
+    <tr><th>サービス</th><th>用途</th></tr>
+    <tr><td>Supabase（データベース・認証・ストレージ）</td><td>アカウント情報・顧客情報・名刺画像の保存および認証。データは暗号化された通信（TLS）で送受信され、組織単位でアクセス制御されます。</td></tr>
+    <tr><td>Anthropic（Claude API）</td><td>名刺画像の読み取り（OCR）、営業スコア・分析・メール文面の生成。処理のために名刺画像および関連する顧客情報が送信されます。</td></tr>
+  </table>
+
+  <h2>4. 名刺情報の取り扱いに関する注意</h2>
+  <p>名刺情報には第三者（名刺の持ち主）の個人情報が含まれます。利用者は、自己の責任において、名刺交換等の正当な手段で取得した名刺のみを本アプリに登録するものとします。当社は、利用者が登録した名刺情報を、本アプリの機能提供以外の目的で利用しません。</p>
+
+  <h2>5. 安全管理措置</h2>
+  <ul>
+    <li>通信はすべて TLS により暗号化されます</li>
+    <li>データベースは組織（会社）単位の行レベルアクセス制御により分離されています</li>
+    <li>名刺画像は非公開ストレージに保存され、所属組織の利用者のみがアクセスできます</li>
+    <li>認証情報は端末のセキュア領域（iOS Keychain / Android Keystore）に保存されます</li>
+  </ul>
+
+  <h2>6. 情報の開示・訂正・削除</h2>
+  <p>利用者は、本アプリ上で自己の登録した情報をいつでも閲覧・修正できます。アカウントおよび登録データの削除は、本アプリの「その他」→「アカウント」→「アカウントを削除」からいつでもご自身で行えます（即時に削除され、復元できません）。アプリにログインできない場合は下記の窓口までご連絡ください。ご本人確認のうえ、合理的な期間内に対応します。</p>
+
+  <h2>7. 保存期間</h2>
+  <p>登録された情報は、アカウントが有効な間保存されます。アプリ内でアカウントを削除した場合、ログイン情報・表示名は即時に削除されます。利用者がその組織の最後のメンバーである場合は、組織に登録された顧客情報・名刺画像・商談履歴等もあわせて即時に削除されます。他のメンバーが残る組織の共有データは、組織の資産として保持されます。</p>
+
+  <h2>8. ポリシーの変更</h2>
+  <p>本ポリシーの内容は、法令の変更やサービスの改善に応じて変更されることがあります。重要な変更がある場合は、本アプリ内または本ページでお知らせします。</p>
+
+  <h2>9. お問い合わせ窓口</h2>
+  <p>
+    運営者: 株式会社マックスコミュニケーションズ<br>
+    連絡先: <a href="mailto:info@maxcommunications.jp">info@maxcommunications.jp</a>
+  </p>
+</main>
+</body>
+</html>
